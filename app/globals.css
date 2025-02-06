@@ -31,6 +31,50 @@ body {
   mask-size: contain;
 }
 
+.img-blob-mobile-1 {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-image: url('/blob-1-mobile.svg'); /* Use SVG as a mask */
+  mask-image: url('/blob-1-mobile.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.img-blob-mobile-2 {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-image: url('/blob-2-mobile.svg'); /* Use SVG as a mask */
+  mask-image: url('/blob-2-mobile.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.img-blob-mobile-3 {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-image: url('/blob-3-mobile.svg'); /* Use SVG as a mask */
+  mask-image: url('/blob-3-mobile.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+@media (max-width: 767px) { /* Example mobile breakpoint */
+  .img-blob-1 {
+    -webkit-mask-image: url('/blob-1-mobile.svg');
+    mask-image: url('/blob-1-mobile.svg');
+  }
+
+  .img-blob-2 {
+    -webkit-mask-image: url('/blob-2-mobile.svg');
+    mask-image: url('/blob-2-mobile.svg');
+  }
+
+  .img-blob-3 {
+    -webkit-mask-image: url('/blob-3-mobile.svg');
+    mask-image: url('/blob-3-mobile.svg');
+  }
+
+  /* ... similar mobile styles for .img-blob-2, .img-blob-3, etc. */
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;

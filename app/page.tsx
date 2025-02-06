@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button"
 import { MapPin, Phone, Menu, X, Mail } from "lucide-react"
 import { useState } from "react"
 import { FaFacebook, FaXTwitter, FaLinkedin } from 'react-icons/fa6';
+import { GrGroup } from "react-icons/gr";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -63,7 +65,7 @@ export default function Home() {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.7)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero-bg-image-2A0yOGP3DojEjUBzdjEKdPmlGZMCLc.jpeg')`,
+            backgroundImage: `linear-gradient(rgba(44, 24, 16, 0.8), rgba(44, 24, 16, 0.3)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero-bg-image-2A0yOGP3DojEjUBzdjEKdPmlGZMCLc.jpeg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -79,8 +81,8 @@ export default function Home() {
               Step into a world where the past meets the present. Experience history like never before through our
               immersive virtual journeys.
             </p>
-            <Button className="bg-[#D2996C] hover:bg-[#d2a27c] text-[#212529] px-6 md:px-8 py-4 md:py-7 text-base md:text-lg">
-              Start Your Journey
+            <Button className="bg-[#D2996C] hover:bg-[#d2a27c] text-[#212529] px-6 py-7 md:px-6 md:py-7 text-lg md:text-xl">
+              Start Your Journey <span className="ml-4"><IoIosArrowForward /></span>
             </Button>
           </div>
         </div>
@@ -194,7 +196,7 @@ export default function Home() {
                     alt={item.title}
                     width={200}
                     height={200}
-                    className={`${item.class} w-full h-full object-cover`}
+                    className={`w-full h-full object-cover ${item.class}`}
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-[#2C1810]">{item.title}</h3>
@@ -206,14 +208,14 @@ export default function Home() {
       </section>
 
       {/* Navigation Icons */}
-      <section className="py-12">
+      <section className="py-12 pb-20">
         <div className="container mx-auto px-4">
           <h2 className="text-xl md:text-4xl text-center mb-8 text-[#2C1810]">Our finest selection</h2>
           <div className="grid grid-cols-2 md:flex md:justify-center gap-4 md:gap-12">
             {["About us", "Our team", "Virtual Destinations", "Events", "Visit us"].map((item) => (
               <div key={item} className="text-center group cursor-pointer">
                 <div className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2 bg-[#F3E8E2] rounded-full flex items-center justify-center transition-colors group-hover:bg-[#B45309]">
-                  <MapPin className="w-6 h-6 md:w-8 md:h-8 text-[#B45309] group-hover:text-white" />
+                  <GrGroup className="w-6 h-6 md:w-8 md:h-8 text-[#B45309] group-hover:text-white" />
                 </div>
                 <h2 className="text-xs md:text-xl text-neutral-600">{item}</h2>
               </div>
@@ -236,7 +238,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#2C1810] text-white py-8 md:py-12">
+      <footer className="bg-[#1c0f0a] text-white py-8 md:py-12">
         <div className="container px-4">
         <div className="flex gap-4 justify-center items-center mb-4 mx-auto">
           <a
