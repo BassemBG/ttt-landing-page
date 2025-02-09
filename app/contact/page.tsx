@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils"
 import { FaEnvelopeOpen } from 'react-icons/fa'; // Example: Open envelope icon
 
 
-export default function PricingPage() {
+export default function ContactPage() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
@@ -37,8 +37,8 @@ export default function PricingPage() {
         <a href="/" className="text-neutral-600 hover:text-neutral-900">
           Home
         </a>
-        <a href="#" className="text-neutral-600 hover:text-neutral-900">
-          Services
+        <a href="/explore" className="text-neutral-600 hover:text-neutral-900">
+          Explore
         </a>
         <a href="/pricing" className="text-neutral-600 hover:text-neutral-900">
           Pricing

@@ -8,7 +8,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 
-export default function PricingPage() {
+export default function ExplorePage() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isMonthly, setIsMonthly] = useState(true);
     const plans = [
@@ -96,7 +96,7 @@ export default function PricingPage() {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(rgba(44, 24, 16, 0.8), rgba(44, 24, 16, 0.3)), url('bg-pricing.jpeg')`,
+            backgroundImage: `linear-gradient(rgba(44, 24, 16, 0.1), rgba(44, 24, 16, 0.1)), url('bg-pricing.jpeg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -104,89 +104,25 @@ export default function PricingPage() {
         <div className="container md:mx-10 md:pl-10 z-10 pt-24 flex justify-between flex-col md:flex-row lg:flex-row max-w-full mx-auto gap-10 lg:gap-20 items-center">
             {/* left side with text*/}
           <div className="max-w-2xl text-white">
-            <h1 className="text-3xl md:text-4xl font-bold lg:text-8xl mb-6">
-              Packages
-              <br />
-              and Pricing
+            <h1 className="text-3xl md:text-4xl font-bold text-amber-950 lg:text-8xl mb-6">
+              Explore History
               </h1>
-            <p className="text-lg md:text-lg font-thin opacity-90 mb-8">
-              With our Pro plan, <br /> you can take your design knowledge <br />  to the next level faster.
+              <h3 className="text-xl md:text-2xl font-normal text-white lg:text-4xl mb-6">
+              Travel Through Time with us !
+              </h3>
+            <p className="text-lg md:text-lg font-thin text-white opacity-90 mb-8">
+              Discover Tunisia's fascinating history like never before. Dive into immersive AR/VR experiences and relive the great moments of our historical heritage.
             </p>
-            <div className="flex items-center space-x-3">
-                <div 
-                    className={`w-12 h-6 flex items-center bg-blue-500 rounded-full p-1 cursor-pointer transition-all duration-300 ${
-                    isMonthly ? "bg-blue-500" : "bg-gray-400"
-                    }`} 
-                    onClick={() => setIsMonthly(!isMonthly)}
-                >
-                    <div 
-                        className={`bg-white w-5 h-5 rounded-full shadow-md transform transition-all duration-300 ${
-                            isMonthly ? "translate-x-6" : "translate-x-0"
-                        }`}
-                        />
-                </div>
-                <span className="text-white text-sm font-medium">{isMonthly ? "Billed Monthly" : "Billed Annually"}</span>
-                
-            </div>
-            <div className="flex items-end gap-5 m-6">
-                    <span className="text-8xl opacity-85">&#10553;</span>
-                    <p> Get 2 months free <br /> if you pay annually</p>
-                </div>
+            <Button className="bg-[#3c220d] hover:bg-[#d2a27c] text-white px-6 py-7 md:px-6 md:py-7 text-lg md:text-xl">
+                Explore More
+            </Button>
 
           </div>
 
             {/* right side with cards*/}
             <div className="lg:w-2/3 flex flex-col sm:flex-row gap-4 items-center sm:items-stretch">
-          {plans.map((plan, i) => (
-            <Card
-              key={plan.title}
-              className={cn(
-                "relative overflow-hidden p-6 rounded-3xl border-0 text-center w-full sm:w-1/3 flex flex-col justify-between",
-                "transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl",
-                plan.isPro
-                  ? "bg-slate-800 sm:-my-4 sm:px-6 sm:py-10 hover:bg-slate-700"
-                  : "bg-slate-900 hover:bg-slate-800",
-              )}
-            >
-              {/* Continuous shine effect */}
-              <div
-                className={cn(
-                  "absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent",
-                  plan.isPro ? "animate-shine-fast" : "animate-shine",
-                )}
-                style={{
-                  backgroundSize: "200% 100%",
-                  backgroundPosition: "100% 0",
-                }}
-              />
-
-              {/* Gradient border effect for Pro plan */}
-              {plan.isPro && (
-                <div className="absolute inset-[1px] rounded-3xl overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/10 to-transparent animate-border-shine" />
-                </div>
-              )}
-
-              <div className="relative z-10">
-                <h3 className="text-xl font-bold mb-4 text-white">{plan.title}</h3>
-                <p className="text-4xl font-bold mb-1 text-white">{plan.price}</p>
-                <p className="text-sm text-white/60 mb-6">per month</p>
-                <ul className="space-y-2 mb-6 text-sm">
-                  {plan.features.map((feature, j) => (
-                    <li key={j} className="text-white/80">
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <button
-                className={`relative z-10 w-full py-2 px-4 rounded-lg font-medium transition-colors text-sm ${plan.ctaClass} hover:bg-[#A67B5B]`}
-              >
-                {plan.cta}
-              </button>
-            </Card>
-          ))}
-        </div>
+                <p>The ring way of showing images is still in research.  :-)</p>
+            </div>
 
 
         </div>

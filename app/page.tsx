@@ -35,8 +35,8 @@ export default function Home() {
             <a href="/" className="text-neutral-600 hover:text-neutral-900">
               Home
             </a>
-            <a href="#" className="text-neutral-600 hover:text-neutral-900">
-              Services
+            <a href="/explore" className="text-neutral-600 hover:text-neutral-900">
+              Explore
             </a>
             <a href="/pricing" className="text-neutral-600 hover:text-neutral-900">
               Pricing
