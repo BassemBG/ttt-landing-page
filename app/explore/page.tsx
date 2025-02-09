@@ -104,10 +104,10 @@ export default function ExplorePage() {
         <div className="container md:mx-10 md:pl-10 z-10 pt-24 flex justify-between flex-col md:flex-row lg:flex-row max-w-full mx-auto gap-10 lg:gap-20 items-center">
             {/* left side with text*/}
           <div className="max-w-2xl text-white">
-            <h1 className="text-3xl md:text-4xl font-bold text-amber-950 lg:text-8xl mb-6">
+            <h1 className="text-6xl md:text-4xl font-bold text-amber-950 lg:text-8xl mb-6">
               Explore History
               </h1>
-              <h3 className="text-xl md:text-2xl font-normal text-white lg:text-4xl mb-6">
+              <h3 className="text-xl md:text-2xl font-normal text-black lg:text-4xl mb-6">
               Travel Through Time with us !
               </h3>
             <p className="text-lg md:text-lg font-thin text-white opacity-90 mb-8">
