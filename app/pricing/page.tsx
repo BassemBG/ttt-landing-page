@@ -73,7 +73,7 @@ export default function PricingPage() {
         <a href="/pricing" className="text-neutral-600 hover:text-neutral-900">
           Pricing
         </a>
-        <a href="#" className="text-neutral-600 hover:text-neutral-900">
+        <a href="/contact" className="text-neutral-600 hover:text-neutral-900">
           Contact
         </a>
       </nav>
