@@ -64,6 +64,10 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "shine": "shine 3s linear infinite",
+        "shine-fast": "shine 2s linear infinite",
+        "border-shine": "border-shine 4s ease infinite",
+
       },
     },
   },
