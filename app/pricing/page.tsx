@@ -168,9 +168,10 @@ export default function PricingPage() {
               )}
 
               <div className="relative z-10">
-                <h3 className="text-xl font-bold mb-4 text-white">{plan.title}</h3>
                 <p className="text-4xl font-bold mb-1 text-white">{plan.price}</p>
                 <p className="text-sm text-white/60 mb-6">per month</p>
+                <h3 className="text-xl font-bold mb-4 text-white">{plan.title}</h3>
+                <hr className="opacity-30 mb-4"/>
                 <ul className="space-y-2 mb-6 text-sm">
                   {plan.features.map((feature, j) => (
                     <li key={j} className="text-white/80">
