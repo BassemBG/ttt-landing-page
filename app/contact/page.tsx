@@ -111,13 +111,13 @@ export default function ContactPage() {
                 </form>
 
                 {/* Envelope Icon (You'll need to install react-icons) */}
-                <div className="absolute md:bottom-20 lg:bottom-20 bottom-40 right-[-30px] md:right-[-200px] lg:right-[-200px]">
+                <div className="absolute md:bottom-20 lg:bottom-20 bottom-40 right-[-10px] md:right-[-200px] lg:right-[-150px]">
                     <Image 
-                        src="/enveloppe.png"  // Path to your image in the public directory
+                        src="/envelope-realistic.png"  // Path to your image in the public directory
                         alt="Envelope Icon" 
-                        width={150} // Adjust width as needed
+                        width={120} // Adjust width as needed
                         height={64} // Adjust height as needed
-                        style={{ transform: 'rotate(25deg)' }} // Inline style for extra rotation
+                        style={{ transform: 'rotate(65deg)' }} // Inline style for extra rotation
                         className="md:w-64 lg:w-72 xl:w-80 sm:w-48 xs:w-40" // Responsive sizes
 
                     />

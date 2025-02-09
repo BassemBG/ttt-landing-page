@@ -72,7 +72,7 @@ export default function Home() {
         />
         <div className="container md:mx-20 px-4 md:pl-10 relative z-10 pt-24">
           <div className="max-w-2xl text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6">
+            <h1 className="text-5xl md:text-5xl lg:text-6xl mb-6">
               A little place
               <br />
               of time travel
