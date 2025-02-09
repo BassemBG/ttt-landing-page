@@ -104,7 +104,7 @@ export default function PricingPage() {
         <div className="container md:mx-10 md:pl-10 z-10 pt-24 flex justify-between flex-col md:flex-row lg:flex-row max-w-full mx-auto gap-10 lg:gap-20 items-center">
             {/* left side with text*/}
           <div className="max-w-2xl text-white">
-            <h1 className="text-3xl md:text-4xl font-bold lg:text-8xl mb-6">
+            <h1 className="text-5xl md:text-4xl font-bold lg:text-8xl mb-6">
               Packages
               <br />
               and Pricing
@@ -136,7 +136,7 @@ export default function PricingPage() {
           </div>
 
             {/* right side with cards*/}
-            <div className="lg:w-2/3 flex flex-col sm:flex-row gap-4 items-center sm:items-stretch">
+            <div className="p-5 lg:w-2/3 flex flex-col sm:flex-row gap-4 items-center sm:items-stretch m-0">
           {plans.map((plan, i) => (
             <Card
               key={plan.title}
