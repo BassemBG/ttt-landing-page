@@ -7,6 +7,8 @@ import Image from "next/image"
 import { useState } from "react";
 import { Card } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
+import Link from "next/link";
+import Navbar from "@/components/layout/navbar";
 
 export default function PricingPage() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -46,51 +48,7 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-white">
 
-    <header className="fixed top-0 w-full bg-white backdrop-blur-sm z-50">
-    <div className="container mx-auto px-4  flex items-center justify-between">
-      <Image
-        src="logo.png"
-        alt="Logo"
-        width={65}
-        height={10}
-      />
-      <nav
-        className={`
-        md:flex items-center gap-6
-        ${
-          isMenuOpen
-            ? "absolute top-full left-0 right-0 bg-white p-4 flex flex-col items-start gap-4 border-b shadow-lg"
-            : "hidden"
-        }
-      `}
-      >
-        <a href="/" className="text-neutral-600 hover:text-neutral-900">
-          Home
-        </a>
-        <a href="/explore" className="text-neutral-600 hover:text-neutral-900">
-          Explore
-        </a>
-        <a href="/pricing" className="text-neutral-600 hover:text-neutral-900">
-          Pricing
-        </a>
-        <a href="/contact" className="text-neutral-600 hover:text-neutral-900">
-          Contact
-        </a>
-      </nav>
-      <div className="flex items-center gap-4">
-        <a href="tel:+1-888-555-5555" className="hidden md:block text-neutral-600">
-          +216 20 000 000
-        </a>
-        {/* <Button variant="ghost" className="hidden md:inline-flex text-neutral-600">
-          Sign in
-        </Button> */}
-        <Button className="hidden md:inline-flex bg-[#B45309] hover:bg-[#92400E] text-white">Contact Us</Button>
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </Button>
-      </div>
-    </div>
-  </header>
+    <Navbar />
 
     <section className="relative min-h-[100vh] flex items-center">
         <div

@@ -2,11 +2,13 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Menu, X, Mail } from "lucide-react"
+import { MapPin, Phone, Menu, X, Mail, ScanSearch, UsersRound, MonitorPlay, CalendarClock, Telescope } from "lucide-react"
 import { useState } from "react"
 import { FaFacebook, FaXTwitter, FaLinkedin } from 'react-icons/fa6';
 import { GrGroup } from "react-icons/gr";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link"
+import Navbar from "@/components/layout/navbar"
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -14,51 +16,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="fixed top-0 w-full bg-white backdrop-blur-sm z-50">
-        <div className="container mx-auto px-4  flex items-center justify-between">
-          <Image
-            src="logo.png"
-            alt="Logo"
-            width={65}
-            height={10}
-          />
-          <nav
-            className={`
-            md:flex items-center gap-6
-            ${
-              isMenuOpen
-                ? "absolute top-full left-0 right-0 bg-white p-4 flex flex-col items-start gap-4 border-b shadow-lg"
-                : "hidden"
-            }
-          `}
-          >
-            <a href="/" className="text-neutral-600 hover:text-neutral-900">
-              Home
-            </a>
-            <a href="/explore" className="text-neutral-600 hover:text-neutral-900">
-              Explore
-            </a>
-            <a href="/pricing" className="text-neutral-600 hover:text-neutral-900">
-              Pricing
-            </a>
-            <a href="/contact" className="text-neutral-600 hover:text-neutral-900">
-              Contact
-            </a>
-          </nav>
-          <div className="flex items-center gap-4">
-            <a href="tel:+1-888-555-5555" className="hidden md:block text-neutral-600">
-              +216 20 000 000
-            </a>
-            {/* <Button variant="ghost" className="hidden md:inline-flex text-neutral-600">
-              Sign in
-            </Button> */}
-            <Button className="hidden md:inline-flex bg-[#B45309] hover:bg-[#92400E] text-white">Contact Us</Button>
-            <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Hero Section with Map Background */}
       <section className="relative min-h-[100vh] flex items-center">
@@ -212,12 +170,33 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-xl md:text-4xl text-center mb-8 text-[#2C1810]">Our finest selection</h2>
           <div className="grid grid-cols-2 md:flex md:justify-center gap-4 md:gap-12">
-            {["About us", "Our team", "Virtual Destinations", "Events", "Visit us"].map((item) => (
-              <div key={item} className="text-center group cursor-pointer">
-                <div className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2 bg-[#F3E8E2] rounded-full flex items-center justify-center transition-colors group-hover:bg-[#B45309]">
-                  <GrGroup className="w-6 h-6 md:w-8 md:h-8 text-[#B45309] group-hover:text-white" />
+            {[
+              {
+                title: "About us",
+                icon: <ScanSearch className="text-yellow-700 w-full"/>,
+              },
+              {
+                title: "Our Team",
+                icon: <UsersRound className="text-yellow-700 w-full"/>,
+              },
+              {
+                title: "Virtual Destinations",
+                icon: <MonitorPlay className="text-yellow-700 w-full"/>,
+              }, 
+              {
+                title: "Events",
+                icon: <CalendarClock className="text-yellow-700 w-full"/>,
+              },
+              {
+                title: "Visit us",
+                icon: <Telescope className="text-yellow-700 w-full"/>,
+              }
+            ].map((item) => (
+              <div key={item} className="text-center group cursor-pointer border-4 border-dotted border-black/50 p-4 rounded-3xl">
+                <div className="w-14 h-12 md:w-20 md:h-20 mx-auto mb-2 bg-[#F3E8E2] rounded-full flex items-center justify-center transition-colors group-hover:bg-[#B45309]">
+                  {item.icon}
                 </div>
-                <h2 className="text-xs md:text-xl text-neutral-600">{item}</h2>
+                <h2 className="text-xs md:text-xl text-neutral-600">{item.title}</h2>
               </div>
             ))}
           </div>
