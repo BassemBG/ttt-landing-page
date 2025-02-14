@@ -75,6 +75,57 @@ body {
 }
 
 
+/* 3D Rotating imgs effect*/
+.rotate_gallery {
+  transform-style: preserve-3d;
+  animation: rotateGallery 25s infinite linear;
+}
+
+
+@keyframes rotateGallery {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
+
+  @media (min-width: 360px) { /* xs */
+    [data-size="responsive"] {
+      --distance: 130px;
+    }
+  }
+
+  @media (min-width: 640px) { /* sm */
+    [data-size="responsive"] {
+      --distance: 180px;
+    }
+  }
+  @media (min-width: 768px) { /* md */
+    [data-size="responsive"] {
+      --distance: 220px;
+    }
+  }
+  @media (min-width: 1024px) { /* lg */
+    [data-size="responsive"] {
+      --distance: 260px;
+    }
+  }
+  @media (min-width: 1280px) { /* xl */
+    [data-size="responsive"] {
+      --distance: 200px;
+    }
+  }
+
+  @media (min-width: 1600px) { /* xl */
+    [data-size="responsive"] {
+      --distance: 250px;
+    }
+  }
+  
+
+
 @keyframes shine {
   to {
     background-position: 0 0;
