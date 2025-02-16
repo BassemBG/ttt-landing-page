@@ -31,7 +31,7 @@ export default function ContactPage() {
         />
             <div className="relative w-full max-w-4xl mx-auto rounded-lg shadow-lg p-5 mt-10">
                 {/* Title */}
-                <h2 className="text-5xl font-black text-amber-950 text-center mb-8">Get in touch</h2>
+                <h2 className="text-5xl text-white font-bold drop-shadow-[4px_4px_0px_#8B4513] text-center mb-8">Get in touch</h2>
 
                 {/* Form */}
                 <form className="space-y-4 bg-transparent/35 p-10 rounded-3xl">
@@ -62,7 +62,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="text-center">
-                    <button type="submit" className="inline-flex justify-center py-2 px-6 border border-transparent rounded-md shadow-sm text-base font-extrabold text-black bg-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <button type="submit" className="inline-flex justify-center py-2 px-6 border border-transparent rounded-md shadow-sm text-base font-extrabold text-black bg-white hover:bg-[#8B4513] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     Submit
                     </button>
                 </div>
