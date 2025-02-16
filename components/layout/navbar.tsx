@@ -22,7 +22,7 @@ const Navbar = () => {
               : "hidden"
           }`}
         >
-          <Link href="/" className="text-neutral-600 hover:text-neutral-900">Home</Link>
+          <Link href="/home" className="text-neutral-600 hover:text-neutral-900">Home</Link>
           <Link href="/explore" className="text-neutral-600 hover:text-neutral-900">Explore</Link>
           <Link href="/pricing" className="text-neutral-600 hover:text-neutral-900">Pricing</Link>
           <Link href="/contact" className="text-neutral-600 hover:text-neutral-900">Contact</Link>

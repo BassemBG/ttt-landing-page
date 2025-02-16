@@ -48,7 +48,7 @@ export default function ExplorePage() {
               <p className="text-lg md:text-lg font-thin text-white opacity-90 mb-8">
                 Discover Tunisia's fascinating history like never before. Dive into immersive AR/VR experiences and relive the great moments of our historical heritage.
               </p>
-              <a href="/">
+              <a href="/home">
                 <Button className="bg-[#3c220d] hover:bg-[#d2a27c] text-white px-6 py-7 md:px-6 md:py-7 text-lg md:text-xl">
                     Explore More
                 </Button>
