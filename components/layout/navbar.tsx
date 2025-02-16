@@ -29,7 +29,7 @@ const Navbar = () => {
         </nav>
         <div className="flex items-center gap-4">
           <a href="tel:+21620000000" className="hidden md:block text-neutral-600">
-            +216 20 000 000
+            +216 55 566 629
           </a>
           <Link href="/contact">
             <Button className="hidden md:inline-flex bg-[#B45309] hover:bg-[#92400E] text-white">

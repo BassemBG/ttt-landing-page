@@ -39,9 +39,12 @@ export default function Home() {
               Step into a world where the past meets the present. Experience history like never before through our
               immersive virtual journeys.
             </p>
-            <Button className="bg-[#D2996C] hover:bg-[#d2a27c] text-[#212529] px-6 py-7 md:px-6 md:py-7 text-lg md:text-xl">
-              Start Your Journey <span className="ml-4"><IoIosArrowForward /></span>
-            </Button>
+            <a href="https://tnvr.pythonanywhere.com/home">
+              <Button className="bg-[#D2996C] hover:bg-[#d2a27c] text-[#212529] px-6 py-7 md:px-6 md:py-7 text-lg md:text-xl">
+                Start Your Journey <span className="ml-4"><IoIosArrowForward /></span>
+              </Button>
+            </a>
+            
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0">
@@ -70,9 +73,12 @@ export default function Home() {
               experiences for all ages, designed to spark curiosity and foster a love for history through interactive VR
               adventures.
             </p>
-            <Button variant="outline" className=" w-fit text-md p-5 rounded-3xl text-black bg-[#cac8c8] hover:text-white">
-              Learn More
-            </Button>
+            <a href="https://tnvr.pythonanywhere.com/home">
+              <Button variant="outline" className=" w-fit text-md p-5 rounded-3xl text-black bg-[#cac8c8] hover:text-white">
+                Learn More
+              </Button>
+            </a>
+            
           </div>
         </div>
       </section>
@@ -212,7 +218,9 @@ export default function Home() {
             have embarked on our virtual journeys. 
           </h2>
           <p className="text-neutral-600 mb-6 md:mb-8">Entrust us with your curiosity and explore history with peace of mind.</p>
-          <Button className="bg-[#D2996C] hover:bg-[#d2a27c] text-[#212529] px-6 md:px-8 py-4 md:py-7 text-lg">Contact Us</Button>
+          <a href="/contact">
+            <Button className="bg-[#D2996C] hover:bg-[#d2a27c] text-[#212529] px-6 md:px-8 py-4 md:py-7 text-lg">Contact Us</Button>
+          </a>
         </div>
       </section>
 
@@ -261,14 +269,14 @@ export default function Home() {
               <div className="flex items-center gap-1">
                 <MapPin className="w-4 h-4" />
                 <p className="text-center md:text-left">
-                  789 Executive Park Blvd, Suite 500 - San Francisco CA 94124, United States
+                  Nabeul, Tunisia
                 </p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-10">
               <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  <p className="text-[#dfb797]">+1 888 555 5555</p>
+                  <p className="text-[#dfb797]">+216 55 566 629</p>
               </div>
               <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
