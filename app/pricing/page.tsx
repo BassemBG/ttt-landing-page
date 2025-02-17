@@ -24,7 +24,7 @@ export default function PricingPage() {
         },
         {
           title: "Pro",
-          price: "$9",
+          price: "$199.99",
           features: [
             "Access to our 500+ free and premium lessons",
             "Weekly live stream and exclusive Q&As",
@@ -36,7 +36,7 @@ export default function PricingPage() {
         },
         {
           title: "Pro Plus",
-          price: "$19",
+          price: "$599.99",
           features: ["Everything in Pro", "30 minutes 1-on-1 mentorship with our Senior Designer"],
           cta: "Join Pro Plus",
           ctaClass: "bg-[#C4A484] hover:bg-[#B8937A]",
